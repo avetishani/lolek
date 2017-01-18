@@ -23,6 +23,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 	&& ln -sf /dev/stderr /var/log/nginx/error.log
 ADD index.html /usr/share/nginx/html
 ADD nginx.conf /etc/nginx/nginx.conf
+ADD version.html /usr/share/nginx/html
 
 EXPOSE 80 443 32777 32778 32779 32780
 
